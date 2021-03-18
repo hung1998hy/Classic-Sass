@@ -1,0 +1,63 @@
+/*========== 6, Design ============*/
+.design {
+  padding: 72px 36px;
+  position: relative;
+  &__left {
+    align-items: flex-end;
+  }
+  &__right {
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    text-align: left;
+    min-height: 0;
+    margin: auto;
+    @include breakpoint(576) {
+      text-align: center;
+    }
+    @include breakpoint(320) {
+      padding-top: 36px;
+    }
+    .design-for {
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+      color: #e9168c;
+      fill: #e9168c;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .design-title {
+      display: block;
+      font-weight: 1000;
+      font-size: 35px;
+      color: #303133;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      @include breakpoint(320) {
+        font-size: 32px;
+      }
+    }
+    .design-text {
+      font-size: 15px;
+      line-height: 1.75;
+      margin: 18px 0 0;
+      color: #777;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    .design-data {
+      margin-top: 0px;
+      font-weight: 1000;
+      color: #e9168c;
+      fill: #e9168c;
+      font-size: 24px;
+      line-height: 1.2;
+      @include breakpoint(991) {
+        display: none;
+      }
+    }
+  }
+}

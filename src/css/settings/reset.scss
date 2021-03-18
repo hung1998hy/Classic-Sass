@@ -1,0 +1,43 @@
+/*========= 1, Reset =========*/
+* {
+  margin: 0;
+  padding: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  &::selection {
+    color: #fff;
+    background: #e9168c;
+  }
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.justify-space {
+  justify-content: space-between;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.f-r {
+  font-family: "x8mv5kd2", Roboto, Sans-Serif;
+}
+.f-q {
+  font-family: Quicksand;
+}

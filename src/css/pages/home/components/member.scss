@@ -1,0 +1,74 @@
+/*================== 8, Member ================== */
+
+@keyframes kenburns {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.member {
+    padding: 144px 36px 288px 36px;
+    background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    overflow: hidden;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: url(../images/texture-geometric-shapes-colors-min-uai-1440x798.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        animation: kenburns 15s ease alternate forwards;
+    }
+    &__img {
+        margin-bottom: 18px;
+        padding: 0;
+        &>img {
+            max-width: 72px;
+            min-height: 72px;
+            margin: 0 0 18px;
+            padding: 0;
+            border: 0;
+            display: inline-block;
+            margin: auto;
+            border-radius: 50%;
+            background-clip: padding-box;
+        }
+    }
+    &__info {
+        font-weight: 300;
+        font-size: 29px;
+        letter-spacing: -0.02em;
+        line-height: 1.75;
+        @include breakpoint(576) {
+            font-size: 17px;
+        }
+    }
+    &__mission {
+        font-size: 14px;
+        display: block;
+        padding-top: 27px;
+        font-weight: 300;
+        margin: 9px 0 0 0;
+        margin-bottom: 0;
+        line-height: 1.75;
+        &::before {
+            content: "-";
+            margin: 0 9px 0 0;
+        }
+    }
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}

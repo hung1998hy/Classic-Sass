@@ -1,0 +1,62 @@
+/*============ 10, Footer ==================*/
+
+.footer {
+    position: relative;
+    background-color: #1b1d1f;
+    padding: 0 36px 72px 36px;
+    table-layout: fixed;
+    @include breakpoint(576) {
+        text-align: center;
+    }
+    &__head {
+        margin-top: 0px;
+        margin-bottom: 0;
+        display: inline-block;
+        font-size: 17px;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+        line-height: 1.2;
+        @include breakpoint(320) {
+            margin-top: 20px;
+        }
+    }
+    &__text {
+        margin-top: 36px;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: left;
+        @include breakpoint(576) {
+            text-align: center;
+        }
+        @include breakpoint(320) {
+            margin-top: 25px;
+        }
+    }
+    &__item {
+        margin-top: 36px;
+        &>a {
+            font-family: Quicksand;
+            color: #fff;
+            font-weight: 400;
+            font-size: 15px;
+            text-align: right;
+            line-height: 1.75;
+            &:hover {
+                color: #e9168c;
+            }
+        }
+    }
+    &__icon {
+        text-align: right;
+        @include breakpoint(576) {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .icon-item>i {
+            width: 1.28571429em;
+            display: inline-block;
+            font-size: 2em;
+            color: #fff;
+        }
+    }
+}

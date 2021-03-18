@@ -1,0 +1,33 @@
+/*================= 4, Service ==========*/
+.service {
+  padding: 72px 36px;
+  margin-top: 0px;
+  &__box {
+    &-item {
+      position: relative;
+      display: inline-block;
+      line-height: 0;
+      .item__icon {
+        height: 120px;
+        width: 120px;
+        margin: auto;
+      }
+      .item__title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #303133;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-top: 27px;
+      }
+      .item__text {
+        font-size: 15px;
+        line-height: 1.75;
+        margin: 18px 0 0;
+        color: #777;
+        font-weight: 400;
+        margin-top: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/*================== 11, Copy ================== */
+.copy {
+  position: relative;
+  background-color: #141618;
+  padding: 36px;
+  &-text {
+    font-weight: 400;
+    font-size: 0.938em;
+    line-height: 1.75;
+    text-align: left;
+    @include breakpoint(576) {
+      text-align: center;
+      font-size: 0.85em;
+    }
+  }
+  &-icon {
+    text-align: right;
+    @include breakpoint(576) {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .icon-item {
+      padding-left: 9px;
+      padding-right: 9px;
+      & > i {
+        color: #fff;
+        &:hover {
+          color: #e9168c;
+        }
+      }
+    }
+  }
+}

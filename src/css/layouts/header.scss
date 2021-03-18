@@ -1,0 +1,372 @@
+/*============== 2, Header ==================*/
+
+.collapse {
+    animation: collapse 0.5s ease forwards;
+}
+
+// Open nav bar on scroll up
+.open {
+    animation: open 0.5s ease forwards;
+}
+
+@keyframes collapse {
+    from {
+        opacity: 1;
+        top: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 103;
+    @include breakpoint(768) {
+        padding: 20px 36px;
+    }
+    &.color {
+        background: #fff;
+        &.color .header__bar-logo svg {
+            fill: #000;
+            height: 35px;
+        }
+        &.color .header__bar-button .bar1,
+        .bar2,
+        .bar3 {
+            background: #000;
+        }
+    }
+    &.record {
+        background: #fff;
+        padding: 13px;
+        @include breakpoint(768) {
+            padding: 20px 36px;
+        }
+        &.record .header__bar-logo svg {
+            fill: #000;
+            height: 35px;
+        }
+        &.record .items-link {
+            color: #000;
+        }
+        &.record .header__bar-button .bar1,
+        .bar2,
+        .bar3 {
+            background: #000;
+            width: 20px;
+            margin: 5.6px 0;
+        }
+    }
+    &__bar {
+        justify-content: space-between;
+        @include min-breakpoint(992) {
+            position: relative;
+            width: 100%;
+        }
+        @include breakpoint(768) {
+            flex-wrap: wrap;
+        }
+        &-list-mobile {
+            display: none;
+            @include breakpoint(992) {
+                display: block;
+            }
+        }
+        &-logo {
+            height: 40px;
+            svg {
+                height: 40px;
+                fill: #fff;
+            }
+        }
+        &-button {
+            padding: 0.75rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            line-height: 1;
+            display: none;
+            fill: #fff;
+            @include breakpoint(991) {
+                display: block;
+                padding: 0;
+            }
+            i {
+                color: #fff;
+            }
+        }
+        &-list {
+            margin-bottom: 0;
+            &.active {
+                max-height: 100vh;
+                @include breakpoint(768) {
+                    background: #000;
+                }
+            }
+            .list-items {
+                margin-left: 30px;
+                @include breakpoint(768) {
+                    margin-left: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                &:hover .menu {
+                    display: block;
+                }
+                &:hover .menu-extra {
+                    display: block;
+                }
+                &:hover .menu-blog {
+                    display: block;
+                }
+                .items-link {
+                    font-size: 13px;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #fff;
+                    padding: 0.7rem 5px;
+                    &>i {
+                        margin-right: 65px;
+                        font-size: 9px;
+                        display: none;
+                        @include breakpoint(768) {
+                            display: block;
+                        }
+                    }
+                }
+                .menu {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 33px;
+                    padding-top: 32px;
+                    text-align: left;
+                    &.active {
+                        background: #000;
+                    }
+                    .menu-drop {
+                        padding: 27px 0;
+                        background-color: #1d1b1f;
+                        width: 100%;
+                    }
+                    .menu-list {
+                        padding: 0 27px;
+                        width: 25%;
+                        .menu-box {
+                            padding-top: 15px;
+                            @include breakpoint(768) {
+                                display: none;
+                            }
+                            .list-text-box {
+                                padding: 5px 9px 5px 9px;
+                                font-size: 13px;
+                                line-height: normal;
+                                letter-spacing: 0px;
+                                display: block;
+                                white-space: nowrap;
+                                color: #fff;
+                                &:hover {
+                                    background-color: #303133;
+                                }
+                            }
+                        }
+                        .list-text {
+                            padding: 9px 9px 20px 9px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #fff;
+                        }
+                    }
+                    .border-l {
+                        border-left: 1px solid rgba(255, 255, 255, 0.5);
+                    }
+                }
+                .menu-extra {
+                    display: none;
+                    position: absolute;
+                    width: 25%;
+                    right: 0;
+                    padding-top: 32px;
+                    text-align: left;
+                    &.active {
+                        background: #000;
+                    }
+                    .menu-drop {
+                        padding: 20px 0;
+                        background-color: #1d1b1f;
+                        position: absolute;
+                        left: 0;
+                        top: 24px;
+                    }
+                    .menu-list {
+                        padding: 0 27px;
+                        width: 100%;
+                        .menu-box {
+                            padding-top: 15px;
+                            @include breakpoint(768) {
+                                display: none;
+                            }
+                            .list-text-box {
+                                padding: 5px 9px 5px 9px;
+                                font-size: 13px;
+                                line-height: normal;
+                                letter-spacing: 0px;
+                                display: block;
+                                white-space: nowrap;
+                                color: #fff;
+                                &:hover {
+                                    background-color: #303133;
+                                }
+                            }
+                        }
+                        .list-text {
+                            padding: 9px 9px 20px 9px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #fff;
+                        }
+                    }
+                }
+                .menu-blog {
+                    display: none;
+                    position: absolute;
+                    width: 25%;
+                    right: 0;
+                    padding-top: 32px;
+                    text-align: left;
+                    &.active {
+                        background: #000;
+                    }
+                    .menu-drop {
+                        padding: 20px 0;
+                        background-color: #1d1b1f;
+                        position: absolute;
+                        left: 0;
+                        top: 24px;
+                    }
+                    .menu-list {
+                        padding: 0 27px;
+                        width: 100%;
+                        position: relative;
+                        &:hover .menu-box {
+                            display: block;
+                        }
+                        .menu-box {
+                            position: absolute;
+                            right: 100%;
+                            top: 0;
+                            background-color: #1d1b1f;
+                            padding: 10px 20px;
+                            display: none;
+                            min-width: 13em;
+                            margin-right: 1px;
+                            @include breakpoint(768) {
+                                display: none;
+                            }
+                            &-item {
+                                margin-bottom: 9px;
+                                &:hover {
+                                    background-color: #303133;
+                                }
+                            }
+                            .list-text-box {
+                                padding: 5px 9px 5px 9px;
+                                font-size: 13px;
+                                line-height: normal;
+                                letter-spacing: 0px;
+                                white-space: nowrap;
+                                color: #fff;
+                            }
+                        }
+                        .list-text {
+                            padding: 5px 9px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            display: flex;
+                            color: #fff;
+                            justify-content: space-between;
+                            &:hover {
+                                background-color: #303133;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-list-mobile {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            overflow: hidden;
+            max-height: 0;
+            padding-top: 27px;
+            padding-right: 67px;
+            padding-bottom: 10px;
+            padding-left: 55px;
+            &.show {
+                max-height: 100vh;
+                background: #1b1d1f;
+            }
+            .mobile__item-subMenu {
+                overflow: hidden;
+                max-height: 0;
+                transition: 0.5s;
+                &.showSub {
+                    max-height: 100vh;
+                }
+                & :last-child .subMenu__item-link {
+                    padding-bottom: 0;
+                }
+            }
+            .mobile__item-link {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #fff;
+                font-family: Quicksand;
+                font-size: 13px;
+                font-weight: 600;
+                @include breakpoint(768) {
+                    padding-bottom: 5px;
+                }
+                &>i {
+                    font-size: 10px;
+                }
+            }
+            .subMenu__item-link {
+                color: #fff;
+                font-family: Quicksand;
+                font-size: 13px;
+                font-weight: 600;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-bottom: 15px;
+                &.active {
+                    max-height: 100vh;
+                }
+                &>i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

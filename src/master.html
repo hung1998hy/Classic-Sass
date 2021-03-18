@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap">
+    <!-- Font Awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Fancy box-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Header-->
+    <div class="header">
+      <div class="container h-100">
+        <div class="header__bar d-flex align-items-center">
+          <div class="header__bar-logo"><a class="logo-img" href="">
+              <svg id="Layer_1-1493852882" preserveaspectratio="xMinYMin" version="1.1" x="0px" y="0px" viewbox="0 0 68.9 68.9" style="enable-background: new 0 0 68.9 68.9" xml:space="preserve">
+                <path d="M34.4,68.9C15.4,68.9,0,53.4,0,34.4S15.4,0,34.4,0s34.4,15.4,34.4,34.4S53.4,68.9,34.4,68.9z M34.4,3C17.1,3,3,17.1,3,34.4 s14.1,31.4,31.4,31.4s31.4-14.1,31.4-31.4S51.8,3,34.4,3z"></path>
+                <g>
+                  <path d="M23,38.9V22.6h6.7v16.3c0,1.6,0.4,2.9,1.2,3.8c0.8,0.9,2,1.3,3.5,1.3s2.8-0.4,3.6-1.3c0.8-0.9,1.2-2.1,1.2-3.8V22.6h6.7 v16.3c0,2.4-0.6,4.5-1.7,6.3c-1.1,1.8-2.6,3-4.3,3.8c-1.7,0.8-3.6,1.2-5.6,1.2c-3.2,0-5.9-1-8-3C24.1,45.3,23,42.5,23,38.9z"></path>
+                </g>
+              </svg></a></div>
+          <div class="header__bar-button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <ul class="header__bar-list d-none d-lg-flex align-items-centers">
+            <li class="list-items"><a class="items-link f-q" href="">Home<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu w-100">
+                <div class="menu-drop d-flex w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">Classic</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Agency</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Start-Up</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Saas</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Banking</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Firm</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Landing</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Photographer</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Lawyer</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Business</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Consultants</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Restaurant</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Consultants</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Studio</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Help Center</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Classic Travel (RTL)</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">CREATIVE</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Marketing</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Digital Agency</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Collective</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Landing</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Agency</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Freelance</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Director</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Fitness</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Corporation</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Studio</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Artist</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Designers</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative Event</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Creative vCard</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Portfolio</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Agency</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Minimal</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Studio</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Developer</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio B&uuml;reau</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Carousel</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Freelance</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Albums</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Photos</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Gallery</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Video</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Illustrator</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Classic</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Blog</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Magazine</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Newspaper</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Masonry</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Impact</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Journal</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Culture</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Editorial</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Split</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Stories</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Author</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Blog Simple</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Shop</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Boutique</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Alternative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Techie</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Off Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Landing</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Design</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Split</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Furniture</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Parallax</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Minimal</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Carousel</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="list-items"><a class="items-link f-q" href="">Pages<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu w-100">
+                <div class="menu-drop d-flex w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">About</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Clean</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Simple</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Minimal</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Contact</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Clean</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Simple</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Minimal</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Services</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Clean</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Simple</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Minimal</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Utility</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Coming Soon</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Splash Page</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Maintenance Mode</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">FAQ</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Custom 404</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Custom Search Results</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Custom Author</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Product</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Digital</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Furniture</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Fashion</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Gallery</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Review</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Designers</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Comparison</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="list-items"><a class="items-link f-q" href="">Features<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu w-100">
+                <div class="menu-drop d-flex w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">About</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Clean</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Simple</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">About Minimal</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Contact</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Clean</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Simple</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Minimal</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Services</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Classic</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Clean</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Wide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Simple</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Services Minimal</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Utility</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Coming Soon</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Splash Page</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Maintenance Mode</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">FAQ</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Custom 404</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Custom Search Results</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Custom Author</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Product</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Digital</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Furniture</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Fashion</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Gallery</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Review</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Designers</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Comparison</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="list-items"><a class="items-link f-q" href="">Blog<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu w-100">
+                <div class="menu-drop d-flex w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">Base HTML</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Typography</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Heading Styles</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Dividers</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lists Styles</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Buttons</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Icon Box</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Contact Forms</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Grid &amp; Gallery</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Isotope Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Media Gallery</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Single Media</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lightbox Options</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Media Carousels</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Content Carousel</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Quotes Carousel</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Interactive</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Tabs &amp; Accordions</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Google Maps</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Social Share</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Team Members</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Pricing Tables</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Counters &amp; Countdown</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Pie Chart &amp; Progress Bar</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Headers</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Header Fade</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Header Slide</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Header Ken Burns</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Header Video</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Header Text Slides</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Header Elements</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Slider Rev &amp; LayerSlider</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">And more&mldr;</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Grid Systems</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Rows &amp; Columns</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Thumbnails Options</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">One Page Scroll</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Animated Headings</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Slides Scroll</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shape Dividers</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="list-items"><a class="items-link f-q" href="#">Works<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu w-100">
+                <div class="menu-drop d-flex w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">Full-Width Layouts</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Masonry</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Carousel</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Lateral</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Photos</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Albums</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Video</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Audio</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Boxed Layouts</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Masonry</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Carousel</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Lateral</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Photos</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Albums</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Video</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Portfolio Audio</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Project Centered</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Custom One</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Custom Two</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Media Stack</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Media Gallery</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Media Slides</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Media Stack Full-Width</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Media Gallery Full-Width</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Centered Media Slides Full-Width</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list border-l"><a class="list-text f-q" href="">Project Sidebar</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Custom One</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Custom Two</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Media Stack</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Media Gallery</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Media Slides</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Media Stack Full-Width</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Media Gallery Full-Width</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Sidebar Media Slides Full-Width</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="list-items"><a class="items-link f-q" href="">Shop<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu-blog">
+                <div class="menu-drop w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">Products<i class="fas fa-chevron-right"></i></a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Creative</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Carousel</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Lateral</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Shop Default</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list"><a class="list-text f-q" href="">Single Product<i class="fas fa-chevron-right"></i></a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product with Custom Layout</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Gallery Carousel</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Gallery Stack</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Full-Width Layout</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Header Layout</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product on Sale</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Variable</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Grouped</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product External/Affiliate</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Product Out of Stock</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list"><a class="list-text f-q" href="">Lookbook<i class="fas fa-chevron-right"></i></a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lookbook Grid</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lookbook Vertical</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lookbook Metro</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lookbook Justify</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Lookbook Carousel</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list"><a class="list-text f-q" href="">Pages<i class="fas fa-chevron-right"></i></a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Cart</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Checkout</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Privacy Policy</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="list-items"><a class="items-link f-q" href="">Extra<i class="fas fa-chevron-down"></i></a>
+              <ul class="menu-extra">
+                <div class="menu-drop d-flex w-100">
+                  <li class="menu-list"><a class="list-text f-q" href="">Frontend Editor</a>
+                    <ul class="menu-box">
+                      <li class="menu-box-item"><a class="list-text-box f-sq" href="">Wireframes Plugin</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Privacy Plugin (GDPR)</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">What&rsquo;s New 2.0</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">What&rsquo;s New 1.7 &ndash; 1.8 &ndash; 1.9</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">What&rsquo;s New 1.6</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Customers Showcase</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Presale Chat</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Help Center &amp; Docs</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Video Tutorials</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">News from Undsgn&trade;</a></li>
+                      <li class="menu-box-item"><a class="list-text-box f-q" href="">Uncode Users Group</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <ul class="header__bar-list-mobile">
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#" style="color: rgba(255, 255, 255, 0.5);">Home<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#" style="color: rgba(255, 255, 255, 0.5);">Classic<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Creative<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Portfolio<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#">Pages<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">About<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Contact<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Service<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#">Features<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Base HTML<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Grid&amp;Gallery<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Interactive<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#">Works<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Full-Width Layout<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Boxed Layouts<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Project Centered<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#">BLog<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Full-Width Layout<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Boxed Layouts<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Post Layout<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#">Shop<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Products List<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Single Products<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Cart<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+            <li class="list-mobile__item"><a class="mobile__item-link" href="#">Extra<i class="fas fa-chevron-down"></i></a>
+              <ul class="mobile__item-subMenu">
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">WooCommerce Builder<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Front-end Editor<i class="fas fa-chevron-down"></i></a></li>
+                <li class="subMenu__item"><a class="subMenu__item-link" href="#">Wireframes Plugin<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Start Footer-->
+    <div class="footer w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3">
+            <h5 class="footer__head text-white f-q">Headquarter</h5>
+            <p class="footer__text text-white f-q">9876 Design Blvd,<br>                  Suite 543, Beverly Hills,<br>                  CA 90212</p>
+          </div>
+          <div class="col-lg-3 col-sm-3 mg-20">
+            <h5 class="footer__head text-white f-q">Customers</h5>
+            <div class="footer__item"><a href="">Customer Care</a><br><a href="">Returns and Refunds</a><br><a href="">Privacy Policy</a><br><a href="">Terms of Use</a><br><a href="">Condition of Sale</a></div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <h5 class="footer__head text-white f-q">Services</h5>
+            <div class="footer__item"><a href="">Opening your Account</a><br><a href="">How To Shop</a><br><a href="">Shipping</a><br><a href="">Track your Order</a><br><a href="">Store Locator</a></div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="footer__icon"><a class="icon-item" href=""><i class="fab fa-cc-visa"></i></a><a class="icon-item" href=""><i class="fab fa-cc-mastercard"></i></a><a class="icon-item" href=""><i class="fab fa-cc-paypal"></i></a><a class="icon-item" href=""><i class="fab fa-cc-stripe"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="copy-text text-white f-q">&copy; 2020 Uncode. All rights reserved</div>
+          </div>
+          <div class="col-lg-6">
+            <div class="copy-icon"><a class="icon-item" href=""><i class="fab fa-facebook-f"></i></a><a class="icon-item" href=""><i class="fab fa-twitter"></i></a><a class="icon-item" href=""><i class="fab fa-pinterest-p"></i></a><a class="icon-item" href=""><i class="fab fa-dribbble"></i></a><a class="icon-item" href=""><i class="fab fa-linkedin-in"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

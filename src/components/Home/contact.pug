@@ -1,0 +1,22 @@
+// Contact
+.contact.section#contact
+    .container
+        h2.contact__title.text-center.text-white.f-m CONTACT US
+        h3.contact__info.text-center.t-d Lorem ipsum dolor sit amet consectetur.
+        form(action="")
+            .row.mb-3
+                .col-md-6
+                    .contact__form
+                        input.contact__form-box#mb-5(type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.")
+                        p.form__text
+                    .contact__form
+                        input.contact__form-box#mb-5(type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email.")
+                        p.form__text
+                    .contact__form
+                        input.contact__form-box#mb-0(type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone.")
+                        p.form__text
+                .col-md-6
+                    .contact__area
+                        textarea.form-control.f-r( placeholder="Your Message *" required="required" data-validation-required-message="Please enter your message.")
+            .form__success.text-center
+                butotn.success-buton.f-m.text-white#sendMessageButton(type="submit") Send Message  

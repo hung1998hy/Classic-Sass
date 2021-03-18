@@ -1,0 +1,104 @@
+/*=============== 3, Banner =================*/
+.banner {
+  padding: 144px 36px;
+  position: relative;
+  background: linear-gradient(to left, #6442ff 0%, #9012fe 100%);
+  @include breakpoint(992) {
+    padding-top: 108px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: url(../images/texture-geometric-shapes-colors-min-uai-1440x798.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &__left {
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    display: block;
+    text-align: left;
+    min-height: 0;
+    margin: auto;
+    @include breakpoint(576) {
+      order: 2;
+      text-align: center;
+    }
+    &-title {
+      font-size: 14px;
+      font-weight: 1000;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin: 27px 0 0;
+      letter-spacing: 0em;
+    }
+    &-info {
+      letter-spacing: -0.02em;
+      font-size: 50px;
+      font-weight: 1000;
+      line-height: 1.2;
+      margin: 27px 0px 0px;
+      @include breakpoint(992) {
+        font-size: 38px;
+      }
+      @include breakpoint(576) {
+        font-size: 30px;
+      }
+      @include breakpoint(320) {
+        font-size: 26px;
+        font-weight: 600;
+      }
+    }
+    &-text {
+      font-size: 24px;
+      letter-spacing: -0.02em;
+      line-height: 1.5;
+      font-weight: 300;
+      margin: 27px 0px 18px 0px;
+      @include breakpoint(576) {
+        font-size: 27px;
+      }
+      @include breakpoint(320) {
+        font-size: 20px;
+      }
+    }
+    &-button {
+      margin-top: 18px;
+      color: #303133;
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+      font-weight: 500;
+      border-radius: 10em;
+      font-size: 15px;
+      padding: 14px 40px 14px 40px;
+      display: inline-block;
+      &:hover {
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+      }
+    }
+  }
+  &__right {
+    padding-left: 36px;
+    @include breakpoint(576) {
+      order: 1;
+    }
+    &-img {
+      @include breakpoint(576) {
+        height: 100%;
+      }
+      @include breakpoint(992) {
+        height: 85%;
+      }
+    }
+  }
+}
